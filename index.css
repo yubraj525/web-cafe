@@ -135,9 +135,9 @@ span {
   color: #c6453e;
 }
 /* ----------------------------------------for products -------------------------------------------------------- */
-.heading{
-    margin: 30px 0px;
-    color: var(--main-color);
+.heading {
+  margin: 30px 0px;
+  color: var(--main-color);
 }
 .section {
   margin: 20px 0px;
@@ -145,11 +145,9 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
- 
 }
 .cards {
-    width: 100%;
+  width: 100%;
   margin: 50px 0px;
   display: flex;
   flex-direction: row;
@@ -161,7 +159,7 @@ span {
   /* border: #5E1F13 solid 1px; */
   width: 15rem;
   position: relative;
-border-radius: 10px;
+  border-radius: 10px;
   box-shadow: var(--box-shadow);
   padding: 10px;
 }
@@ -190,3 +188,80 @@ border-radius: 10px;
   width: 100%;
 }
 /* --------------------------------icecream--------------------------------------------- */
+
+.dessert {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: var(--padding);
+  }
+.ice-card {
+  height: 8rem;
+  display: flex;
+  box-shadow: var(--box-shadow);
+  padding: var(--padding);
+  position: relative;
+  border-radius: 15px;
+}
+.ice-imgContainer {
+  width: 40%;
+aspect-ratio: 1;
+ 
+  position: absolute;
+  top: 50;
+  bottom: 0;
+  transform: rotate(340deg);
+  left: -50px;
+ 
+}
+.ice-img{
+    object-fit: contain;
+}
+.ice-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 5px;
+}
+.ice-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ice-text p {
+  font-size: small;
+}
+.ice- text h1,h3{
+    color: var(--main-color);
+    font-size: small;
+}
+.ice-button{
+    margin: 5px 0px;
+    padding: 0;
+    width: 50%;
+    float: left;
+    height: 25px;
+}
+
+.ice-left-section {
+  width: 40%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.ice-right-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: var(--padding);
+}
