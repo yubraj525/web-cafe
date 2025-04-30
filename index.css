@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --main-color: #5e1f13;
   --accent-color: #c6453e;
@@ -20,9 +21,10 @@
   text-transform: capitalize;
   transition: all 0.5s ease-in-out;
 
-  
+
 }
-.faq-div{
+
+.faq-div {
   position: fixed;
   width: 120px;
   aspect-ratio: 1;
@@ -31,21 +33,22 @@
   z-index: 15;
   border-radius: 50%;
   /* overflow: hidden; */
- 
-}
-.faq-cup{
- width: 100%;
- aspect-ratio: 1;
- position: relative;
-
 
 }
 
+.faq-cup {
+  width: 100%;
+  aspect-ratio: 1;
+  position: relative;
 
-.faq-cup:hover .cup{
- transform: rotate(-45deg);
- transition: all 0.5s ease-in-out;
- translate: 0 -120px;
+
+}
+
+
+.faq-cup:hover .cup {
+  transform: rotate(-45deg);
+  transition: all 0.5s ease-in-out;
+  translate: 0 -120px;
 }
 
 
@@ -55,15 +58,17 @@
   visibility: visible;
   animation-delay: 0s;
   animation-play-state: running;
-  transition-delay: 0.6s; /* Matches the cup's transition time */
+  transition-delay: 0.6s;
+  /* Matches the cup's transition time */
 }
-.faq-vapour{
+
+.faq-vapour {
   width: 300px;
- height: 100px;
+  height: 100px;
   top: -50px;
   right: 100px;
   font-size: small;
-  position:absolute;
+  position: absolute;
   background-color: var(--tertiary-color);
   border: #5e1f13 1px solid;
   border-radius: 20px;
@@ -75,7 +80,7 @@
   animation: vapours 10s linear infinite;
   animation-play-state: paused;
   transition: opacity 0.3s ease;
-   
+
 }
 
 
@@ -100,6 +105,7 @@ navbar {
   justify-content: space-around;
   box-shadow: var(--box-shadow);
 }
+
 ul {
   height: 100%;
   list-style-type: none;
@@ -108,6 +114,7 @@ ul {
   align-items: center;
   gap: 20px;
 }
+
 li a {
   text-decoration: none;
   float: left;
@@ -117,6 +124,7 @@ li a {
   font-family: montserrat;
   font-weight: bold;
 }
+
 a:hover {
   color: var(--accent-color);
 }
@@ -138,6 +146,7 @@ button {
   background-color: var(--tertiary-color);
   font-weight: bold;
 }
+
 /* --------------------------------now for container after navbar------------------------------------------- */
 
 .container {
@@ -152,12 +161,14 @@ button {
   /* background-color: rgba(128, 128, 128, 0.062) */
   background-color: #5e1f13;
 }
+
 .blurry {
   width: 100%;
   height: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.466);
 }
+
 .text-container {
   width: 40%;
   height: 100%;
@@ -171,9 +182,11 @@ button {
   font-family: --;
   gap: 5px;
 }
+
 .text-container p {
   font-size: small;
 }
+
 .text-container h1 {
   font-size: 3rem;
   font-weight: 900;
@@ -189,28 +202,33 @@ button {
   left: 0px;
   bottom: -8rem;
 }
+
 .img-container {
   width: 40%;
   aspect-ratio: 1;
   object-fit: contain;
   z-index: 1;
 }
+
 span {
   color: #c6453e;
 }
+
 /* ----------------------------------------for products -------------------------------------------------------- */
 .heading {
   margin: 30px 0px;
   color: var(--main-color);
 }
+
 .section {
-    width: auto;
+  width: auto;
   margin: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .cards {
   width: 100%;
   margin: 50px 0px;
@@ -220,6 +238,7 @@ span {
   justify-content: space-evenly;
   color: var(--main-color);
 }
+
 .card-product {
   /* border: #5E1F13 solid 1px; */
   width: 15rem;
@@ -228,6 +247,7 @@ span {
   box-shadow: var(--box-shadow);
   padding: 10px;
 }
+
 .card-img {
   width: 150px;
   top: -100px;
@@ -246,27 +266,33 @@ span {
   gap: 8px;
   margin: 5px;
 }
+
 .card-text p {
   font-size: small;
 }
+
 .product-button {
   width: 100%;
 }
+
 /* --------------------------------icecream--------------------------------------------- */
 
-#heading2{
-  scroll-margin-top: 20vh; /* <--- THIS is the trick */
+#heading2 {
+  scroll-margin-top: 20vh;
+  /* <--- THIS is the trick */
 }
+
 .dessert {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-    padding: var(--padding);
-  }
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: var(--padding);
+}
+
 .ice-card {
   height: 8rem;
   display: flex;
@@ -275,20 +301,23 @@ span {
   position: relative;
   border-radius: 15px;
 }
+
 .ice-imgContainer {
   width: 40%;
-aspect-ratio: 1;
- 
+  aspect-ratio: 1;
+
   position: absolute;
   top: 50;
   bottom: 0;
   transform: rotate(340deg);
   left: -50px;
- 
+
 }
-.ice-img{
-    object-fit: contain;
+
+.ice-img {
+  object-fit: contain;
 }
+
 .ice-content {
   width: 100%;
   height: 100%;
@@ -297,24 +326,29 @@ aspect-ratio: 1;
   padding-left: 100px;
   padding-right: 5px;
 }
+
 .ice-text {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
+
 .ice-text p {
   font-size: small;
 }
-.ice- text h1,h3{
-    color: var(--main-color);
-    font-size: small;
+
+.ice- text h1,
+h3 {
+  color: var(--main-color);
+  font-size: small;
 }
-.ice-button{
-    margin: 5px 0px;
-    padding: 0;
-    width: 50%;
-    float: left;
-    height: 25px;
+
+.ice-button {
+  margin: 5px 0px;
+  padding: 0;
+  width: 50%;
+  float: left;
+  height: 25px;
 }
 
 .ice-left-section {
@@ -323,6 +357,7 @@ aspect-ratio: 1;
   border-radius: 12px;
   overflow: hidden;
 }
+
 .ice-right-section {
   width: 50%;
   height: 100%;
@@ -334,116 +369,128 @@ aspect-ratio: 1;
   padding: var(--padding);
 }
 
-/* -------------------------------------------for drinks--------------------------------------------- */ 
+/* -------------------------------------------for drinks--------------------------------------------- */
 
-.drinkcards-container{
-    width: 100%;
-    margin: 30px 0px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(392px, 1fr));
-    padding: 0 3rem;
-    grid-auto-flow: row;
-    place-items: center;
-    gap: 20px; /* optional: spacing between items */
-    row-gap: 70px;
-    padding: var(--padding);
+.drinkcards-container {
+  width: 100%;
+  margin: 30px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(392px, 1fr));
+  padding: 0 3rem;
+  grid-auto-flow: row;
+  place-items: center;
+  gap: 20px;
+  /* optional: spacing between items */
+  row-gap: 70px;
+  padding: var(--padding);
 }
 
-.video-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 25rem;
-    overflow: hidden;
- 
-    box-shadow: var(--box-shadow);
- 
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+
+  box-shadow: var(--box-shadow);
+
 }
-.drink-card{
-    width: 400px;
-    height: 7rem;
-    display: flex;
-    box-shadow: var(--box-shadow);
-    padding: 5px;
-    border-radius: 15px;
+
+.drink-card {
+  width: 400px;
+  height: 7rem;
+  display: flex;
+  box-shadow: var(--box-shadow);
+  padding: 5px;
+  border-radius: 15px;
 }
-.drink-imgContainer{
-    position: relative;
-    width:10rem;
-    height: 7rem;
+
+.drink-imgContainer {
+  position: relative;
+  width: 10rem;
+  height: 7rem;
 }
-.drink-content{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    padding-right: 5px;
-   
+
+.drink-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-right: 5px;
+
 }
-.drink-img{
-    width:80%;
+
+.drink-img {
+  width: 80%;
   height: auto;
-    position: absolute;
-    top: -50px;
-    left: 10px;
-    transform: rotate(30deg);
-    
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  transform: rotate(30deg);
+
 }
-.drink-img-notra-spec{
-  width:100%;
+
+.drink-img-notra-spec {
+  width: 100%;
   height: auto;
-    position: absolute;
-    top: -50px;
-    left: 10px;
-    transform: rotate(5deg);
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  transform: rotate(5deg);
 }
-.drink-img-notra{
-  width:60%;
+
+.drink-img-notra {
+  width: 60%;
   height: auto;
-    position: absolute;
-    top: -50px;
-    left: 10px;
-    transform: rotate(5deg);
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  transform: rotate(5deg);
 }
-.drink-button{
-    margin: 5px 0px;
-    padding: 0;
-    width: 50%;
-    float: left;
-    height: 25px;
+
+.drink-button {
+  margin: 5px 0px;
+  padding: 0;
+  width: 50%;
+  float: left;
+  height: 25px;
 }
+
 /* --------------------------------------------services--------------------------------------------- */
-.service-container{
-    width: 100%;
-    /* height: 100vh; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    /* background-color: var(--main-color); */
+.service-container {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: var(--main-color); */
 }
-.service-section{
+
+.service-section {
   width: 70%;
   height: 300px;
- 
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
 }
-.service-section-oppo{
+
+.service-section-oppo {
   width: 70%;
   height: 300px;
- 
+
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  .service-content{
+
+  .service-content {
     border-left: none;
     border-right: #5e1f13 solid 4px;
     text-align: end;
@@ -452,12 +499,12 @@ aspect-ratio: 1;
 
 }
 
-.service-img{
-  width:50%;
-aspect-ratio: 2;
+.service-img {
+  width: 50%;
+  aspect-ratio: 2;
 }
 
-.service-content{
+.service-content {
   width: 50%;
   height: 50%;
   display: flex;
@@ -468,23 +515,100 @@ aspect-ratio: 2;
 
 
 }
-/* ----------------------------------------footer-------------------------------------------- */
-footer{
-    width: 100%;
+/* ---------------------------------------------------------about--------------------------------------------- */ 
+.aboutsection{
+  width: 100%;
+
+  flex-direction: column;
+position: relative;
+  padding: var(--padding)*2;
+}
+.about-container-top{
+  width: 100%;
+  height: 40vh;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 50 50px;
+  position:relative ;
+  margin-bottom: 150px;
+}
+.about-container-top-top{
+width: 50%;
+text-align: center;
+color:var(--tertiary-color)
+}
+.about-container-top-bottom{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top:80%;
+ display: flex;
+  justify-content: center;
+  gap:30px;
+}
+.about-img{
+width: 300px;
+
+box-shadow: var(--box-shadow);
+ height: 200px;
+ border-radius: 10px;
+ overflow: hidden;
+
+
  
-    background-color: var(--main-color);
-   
-    padding:var(--padding)
+
 }
-.footer-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
+.aboutimage{
+ 
+  
+    
+    object-fit: cover;
+  
 }
-.footer-logo{
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+.about-content{
+  width: 100%;
+  padding: var(--padding);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding:  50px 50px;
+
+  gap: 20px;
+}
+.about-content-flex{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: row;
+  gap: 40px;
+  
+}
+/* ----------------------------------------footer-------------------------------------------- */
+footer {
+  width: 100%;
+
+  background-color: var(--main-color);
+
+  padding: var(--padding)
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
