@@ -612,9 +612,10 @@ gap: 50px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--main-color);
 
 }
-.gallery-container
+.gallery-frame-container
 {
   width: 100%;
   padding: var(--padding);
@@ -625,10 +626,10 @@ overflow-x: scroll;
   /* justify-content: center;   */
 
   gap: 30px;
-  background-color: var(--main-color);
+
 
 }
-.gallery-container::-webkit-scrollbar {
+.gallery-frame-container::-webkit-scrollbar {
   display: none;
 }
 .gallery-frame{
@@ -651,7 +652,7 @@ overflow-x: scroll;
   width: 100%;
   height: 70%;
   aspect-ratio: 1;
-  background-color: red;
+  
 
 
 }
@@ -671,6 +672,16 @@ overflow-x: scroll;
 
   padding: 10px;
 
+}
+.gallery-heading{
+  width: 50%;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  margin: 50px;
+  color: var(--tertiary-color);
 }
 /* .gall
 ery-container {
