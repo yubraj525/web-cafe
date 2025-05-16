@@ -142,8 +142,19 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  cursor: pointer;
 }
 
+.login-button-container a{
+  border: 10px --main-color;
+  width: 100px;
+  color: var(--main-color);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  background-color: var(--tertiary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
 button {
   border: 10px --main-color;
   width: 100px;
@@ -789,6 +800,9 @@ align-self: center;
 
 }
 .blogs-container{
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 100%;
 
 }
 .blogs-card{
