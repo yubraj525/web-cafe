@@ -92,11 +92,15 @@ img {
   width: 100%;
   object-fit: contain;
 }
+.tagline{
+  position: absolute;
+}
 
 /* -----------------------------------navbar -------------------------------------------------------------------- */
 .imgwrap {
   height: 100%;
   width: 125px;
+  position: relative;
 }
 
 navbar {
